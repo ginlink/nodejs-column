@@ -5,8 +5,8 @@ const log = new Log();
 log.start();
 
 module.exports = function () {
-    return async function ( ctx, next ) {
-        ctx.log = log;
-        await next();
-    }
-}
+  return async function (ctx, next) {
+    ctx.log = log;
+    await next();
+  };
+};

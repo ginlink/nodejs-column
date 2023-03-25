@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clinic-test": "cd bin;node clinic_test.js;cd .."
+    "clinic-test": "cd bin;node clinic_test.js;cd ..",
+    "format": "prettier --write \"**/*.{js,mjs,cjs,ts,mts,cts,vue,json}\""
   },
   "author": "",
   "license": "ISC",
@@ -29,5 +30,8 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "util": "^0.12.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
   }
 }

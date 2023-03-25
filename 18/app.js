@@ -11,9 +11,11 @@ const security = require('./src/middleware/security');
 app.use(logCenter());
 app.use(security());
 app.use(checkToken());
-app.use(koaBody({
-    multipart: true
-}));
+app.use(
+  koaBody({
+    multipart: true,
+  }),
+);
 app.use(routerMiddleware());
 //app.use(backendRouter());
 
